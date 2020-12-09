@@ -1,0 +1,149 @@
+.header{
+    display: flex
+}
+.header img{
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+.logo{
+    line-height: 0;
+    font-size: 40px;
+    display: block;
+}
+.logo img{
+    opacity: 0.5;
+}
+ul.tses{
+    
+    padding-top: 90px;
+    font-style: oblique;
+    list-style: none;
+   display: flex;
+   font-size: 30px;
+   height: 90px;
+   margin-top: 40px;
+   margin-left: -100px;
+   margin-top: -50px;
+   
+}
+ul.tses li a {
+    top: 100px;
+   font-size: 25px;
+   font-weight: bold;
+   color: rgb(39, 37, 37);
+    padding: 0 50px;
+    text-shadow: black;
+}
+ul.tses li a:hover{
+    background-color: rgb(229, 226, 226);
+    color: black;
+}
+.medeelel{
+    color: black;
+    font-style: oblique;
+    font-style: initial;    
+    font-size: 40px;
+    padding-left: 50%;
+    background-color: darkgrey;
+    
+
+}
+a:link{
+    text-decoration: none;
+}
+.medee1{
+    border: 1px solid black;
+    display: inline-flex;
+    font-size: 50px;
+    font-style: inherit;
+    font-size: 16PX;
+    padding: 0 20px 0 20px;
+    background-color: rgb(255, 254, 251);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    width: 70%;
+}
+.sectio{
+    display: flex;
+}
+.baruun1{
+    font-size: 15px;
+    border: 1px solid black;
+    background-color: rgb(255, 254, 251);
+    display: block;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+    text-decoration: cadetblue;
+    text-overflow: ellipsis;
+    width: 400px;
+    
+    
+}    
+.b.deed{
+    list-style-type: none;
+    color: #aad4e5;
+    display: inline block;
+    background-color:#041527;
+    color: #9AFEFF;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.togsgol{
+    background-color: rgb(85, 86, 90);
+    padding: 15px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.links{
+    margin-top: 10px;
+}
+.a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: 500;
+    font-weight: 500;
+   
+}
+
+.links .facebook{
+    background-color: #4d7bdf;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    width: 120px;
+}
+.links .youtube{
+    background:  #df3f39;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    width: 120px;
+}
+.ognoo{
+    text-align: center;
+    background-color: rgb(222, 225, 228);
+    color: black;
+    font-size: 16px;
+    padding: 20px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+ .holboo{
+     border: 1px solid black;
+     font-size: 16px;
+     font-style: inherit;
+     background-color: lightblue;
+ }
+ .zurag img{
+     width: 400px;
+     height: 400px;
+     border: 1px solid black;
+     padding-left: 50px;
+    
+
+ }

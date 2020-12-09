@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="newStyles.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="userForm">
+            <div id="myForm" name="myForm" style="transform:translateX(14%) translateY(5%);">
+                <strong style="position:fixed; margin-left: 60px;">Дараах формыг бөгөлнө үү</strong> <br>
+
+                Овог: <input type="text" id="LName" style=" margin-top: 40px; margin-left: 70px;"><br />
+                Нэр: <input type="text" id="FName" style="margin-top: 10px ;margin-left: 78px;"><br />
+                Цахим шуудан: <input type="text" placeholder="exapmle@gmail.com" id="e-mail" style="margin-top: 10px ; margin-left: 4px;"><br />
+                Утасны дугаар: <input type="number" placeholder="8888 8888" id="phone" style="margin-top: 10px ; margin-left: 4px;"> <br>
+                <!-- Төрсөн он сар: <input type="date" name="bornDate" id="date" style="margin-top: 10px ; margin-left: 8px;"><br><br> -->
+                <br>
+                Хүйс: <br style="margin-top: 20px ;">
+                <input id="male" type="radio" name="gender" value="male"  />Male <br />
+                <input id="female" type="radio" name="gender" value="female" />Female <br /><br>
+
+                Боловсролын байдал: <br>
+                <input id="item1" type="checkbox">  Баклавр болон түүнэс дээш зэрэгт суралцдаг<br>
+                <input id="item2" type="checkbox">  Ахлах сургуульд сурлцдаг<br>
+                <input id="item3" type="checkbox">  Дунд сургуульд сурлцдаг<br>
+                <input id="item4" type="checkbox">  Бага сургуульд сурлцдаг<br><br>
+
+                Суралцахыг хүсч буй мэргэжил: <br>
+                <select style="display: block; transform: translateX(10px) translateY(10px); " name="Class" id="selection">
+                    <option value="Мэдээллийн технологи">Мэдээллийн технологи</option>
+                    <option value="Мэдээллийн систем">Мэдээллийн систем</option>
+                    <option value="Компьютерийн ухаан">Компьютерийн ухаан</option>
+                    <option value="Програм хангамж">Програм хангамж</option>
+                    <option value="Мэдээллийн аюулгүй байдал">Мэдээллийн аюулгүй байдал</option>
+                    <option value="Сүлжээний технологи">Сүлжээний технологи</option>
+                </select><br><br>
+
+                Танилцуулга: <br style="margin-top: 10px ;">
+                <textarea name="about" id="about" cols="30" rows="10" style="margin-top: 10px; width: 320px; height: 150px;"></textarea><br>
+             
+                <input onclick="newForm()" type="Submit" name="Submit" id="" >
+                <input type="reset" name="reset" id="reset">
+            </div>
+        </div>
+
+        <div  class="newForm">
+            <h3 class="info">Мэдээлэл</h3>
+            <form class="myForm" action="">
+                <div style="display: flex;">
+                    <p class="status">Овог:</p> <p class="status2" id="newfName"></p>
+                </div>
+                <div style="display: flex;">
+                    <p class="status">Нэр:</p> <p class="status2" id="newlName"></p>
+                </div>
+                <div style="display: flex;">
+                    <p class="status">Цахим шуудан:</p> <p class="status2" id="newEmail"></p>
+                </div>
+                <div style="display: flex;">
+                    <p class="status"> Утасны дугаар:</p> <p class="status2" id="newPhone"></p>
+                </div>
+                <div style="display: flex;">
+                    <p class="status"> Хүйс:</p> <p class="status2" id="newGender"></p>
+                </div>
+                <div style="display: flex;">
+                    <p class="status"> Боловсролын байдал:</p> <p class="status2" id="itemsgetter"></p>
+                </div>
+                <div style="display: flex;">
+                    <p class="status"> Суралцахыг хүсч буй мэргэжил:</p> <p class="status2" id="newSelected"></p>
+                </div>
+                <div style="display: block;">
+                    <p class="status"> Танилцуулга:</p><textarea class="status2" name="" id="newAbout" cols="30" rows="10" readonly></textarea>
+                </div>
+                
+                
+                <p id="newfName"></p>
+                
+            </form>
+        </div>
+    </div>
+    <script src="scriptsForm.js"></script>
+</body>
+</html>

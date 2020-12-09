@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainContainer{
+    background: linear-gradient(140deg, #4b82d4 20%, #a72293 50%, #b4149f 80%);
+    height: 1800px;
+    width: 100%;
+}
+.userForm{
+    background-image: url(images/form-background.png); 
+    background-position: left;
+    position: relative;
+    background-size: cover; 
+    margin: auto; 
+    top: 50px;
+    width: 450px; 
+    height: 800px;
+    border-radius: 25px;
+}
+.newForm{
+    background-position: left;
+    position: relative;
+    background-size: cover; 
+    margin: auto; 
+    top: 100px;
+    width: 700px; 
+    height: 800px;
+    border-radius: 25px;
+    background-image: url(images/form-background.png); 
+}
+
+.myForm{
+    position: relative;
+    top: 100px;
+    left: 20%;
+}
+
+.vl {
+    border-left: 1px solid white;
+   
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+   
+}
+
+h3{
+    position: relative;
+    left: 44%;
+    top: 40px;
+}
+
+
+
+
+.info{
+    position: absolute;
+    top: 70px;
+    font-size: 25px;
+}
+
+
+
+.status{
+    position: relative;
+    margin-top: 20px;
+    margin-left: -60px;
+    font-size: 20px;
+}
+
+.status2{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+}

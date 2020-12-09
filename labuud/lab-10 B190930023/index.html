@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS</title>
+    <style>
+        #left,#right {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            cursor: pointer;
+        }
+
+        #left {
+            left: 0;
+            color: #eee;
+        }
+
+        #right {
+            right: 0px;
+            color: #900;
+        }
+
+        #left div,#right div,#vs {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -50px 0 0 -50px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 100px;
+            border-radius: 50px;
+        }
+
+        #right,#left div {
+            background-color: #900;  
+        }
+
+        #left,#right div {
+            background-color: #eee;
+            
+        }
+
+        #vs {
+            background-color: #000;
+            color: #fff;
+            box-shadow: 2px 2px 5px #000;
+        }
+    </style>
+</head>
+<body>
+    <div id = "left" onclick="left_click()"><div></div></div> 
+    <div id = "right" onclick="right_click()"><div></div></div> 
+    <div id = "vs">VS</div>
+    <script>
+        var left = 0, right = 0;
+        var leftDiv = document.getElementById("left");
+        var rightDiv = document.getElementById("right");   
+        var vsDiv = document.getElementById("vs");
+
+        function refersh() {
+            // vs tagiin bairshiliin uurchlult
+            leftDiv.style.width = (50 + left - right).toString() + "%";
+            leftDiv.firstChild.innerHTML = left;
+     
+            rightDiv.style.width = (50 - left + right).toString() + "%";
+            rightDiv.firstChild.innerHTML = right;
+
+            vsDiv.style.left=(50 - left + right).toString()+"%";
+            vsDiv.style.left=(50 + left - right).toString()+"%";
+        }
+
+        function left_click(){
+            left++; 
+            refersh(); 
+        }
+        function right_click(){
+            right++; 
+            refersh(); 
+        }
+
+        document.addEventListener('keydown', function (event){
+            if(event.key ==='r'){
+                left++; 
+                refersh(); 
+            }
+        });
+        document.addEventListener('keydown', function (event){
+            if(event.key ==='l'){
+                right++; 
+                refersh();
+            } 
+        });
+      
+        refersh();
+    </script> 
+</body>
+</html>

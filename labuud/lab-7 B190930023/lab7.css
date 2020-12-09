@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    text-align: center;
+    font-size: 30px;
+    color: #a6f6f1;
+    width: 100%;
+    height: 80px;
+    text-shadow: -4px 4px 3px #999999, 1px -1px 2px #eee;
+}
+
+.container{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    background-color: aqua;
+    animation-name: hudulguun;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.TreeCon{
+    position: relative;
+    background-color: red;
+    
+}
+
+.tree1{
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    animation: move 30s infinite  linear;
+    
+}
+
+.tree2{
+    position: absolute;
+    top: 150px;
+    left: 560px;
+    animation: move 30s infinite linear;
+}
+
+.tree3{
+    position: absolute;
+    top: 180px;
+    left: 1200px;
+    animation: move 30s infinite linear;
+}
+
+.dog{
+    position: absolute;
+    left: 50%;
+    padding-top: 150px;
+    animation: movement1 infinite 0.5s;
+       animation: movement1 infinite 0.2s;
+     
+    animation-timing-function:  linear   ;
+}
+
+.but1{
+    position: relative;
+    top: 240px;
+	left: 150px;
+    animation: move 30s infinite;
+}
+
+.but2{
+    position: relative;
+    top: 240px;
+    left: 300px;
+    animation: move  30s infinite;
+}
+
+.but3{
+    position: relative;
+    top: 249px;
+    left: 600px;
+    animation: move 20s infinite;
+}
+.but4{
+    position: relative;
+    top: 249px;
+    left: 600px;
+    animation: move 20s infinite;
+}
+.tree4{
+    position: absolute;
+    top: 180px;
+    left: 1200px;
+    animation: move 30s infinite linear;
+}
